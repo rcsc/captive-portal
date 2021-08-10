@@ -1,0 +1,21 @@
+<!-- views/success.ejs -->
+<!doctype html>
+<html>
+  <head>
+    <title>Google SignIn</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- load fontawesome -->
+      <style>
+          body        { padding-top:80px; }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-6 col-sm-offset-3">
+          <h1>You have been signed in</h1>
+                            <strong>Email</strong>: <%= user.emails[0].value %><br>
+                            <strong>Name</strong>: <%= user.displayName %>
+      </div>
+    </div>
+  </body>
+</html> 
