@@ -11,6 +11,8 @@ app.use(session({
   secret: process.env.SECRET 
 })); // Set up the app using sessions
 
+app.use(express.static(__dirname + '/views'));
+
 app.get('/', function(req, res) {
   res.render('pages/auth');
 }); // Basic routing, passes any people who access the webpage to pages/auth

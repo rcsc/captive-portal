@@ -1,10 +1,10 @@
 <!-- views/success.ejs -->
-<!doctype html>
+<!-- <!doctype html>
 <html>
   <head>
     <title>Google SignIn</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- load bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
       <style>
           body        { padding-top:80px; }
       </style>
@@ -18,4 +18,22 @@
       </div>
     </div>
   </body>
-</html> 
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RCSC SignIn</title>
+    <link rel="stylesheet" type="text/css" href="/css/auth.css" />
+  </head>
+  <body>
+    <div id="div1">
+      <h1 id="header">Sign<br />In</h1>
+    </div>
+    <div id="div2">
+      <h1>You have been signed in</h1>
+      <p>Name</p>: <%= user.displayName %><br>
+      <p>Email</p>: <%= user.emails[0].value %>
+    </div>
+  </body>
+</html>
