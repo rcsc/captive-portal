@@ -4,7 +4,7 @@
   "description": "RCSC Captive portal written in NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "star": "node index.js"
   },
   "author": "Akhil Vanka",
   "license": "MIT",
