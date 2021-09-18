@@ -6,5 +6,5 @@
             "use": "@vercel/node"
         }
     ],
-    "rewrites": [{ "source": "/auth/(.*)", "destination": "/auth" }]
+    "rewrites": [{ "source": "/auth/google/(.*)", "destination": "/auth/google" }]
 }
