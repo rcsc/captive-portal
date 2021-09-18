@@ -20,7 +20,7 @@
             "dest": "index.js"
         },
         {
-            "src": "/auth.css",
+            "src": "/css/auth.css",
             "dest": "index.js"
         }
     ]
