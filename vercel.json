@@ -6,15 +6,5 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [
-        {
-            "src": "/auth/(.*)",
-            "dest": "index.js"
-        },
-        {
-            "src": "/auth/google/(.*)",
-            "dest": "index.js"
-        }
-    ],
     "rewrites": [{ "source": "/auth/(.*)", "destination": "/auth" }]
 }
