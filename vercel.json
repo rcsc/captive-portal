@@ -15,5 +15,5 @@
             "src": "/auth/google/(.*)",
             "dest": "index.js"
         }
-    ],
+    ]
 }
