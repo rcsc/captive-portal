@@ -11,7 +11,7 @@ app.use(session({
   secret: process.env.SECRET 
 })); // Set up the app using sessions
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/views'));
 
 app.get('/', function(req, res) {
   res.render('pages/auth');
