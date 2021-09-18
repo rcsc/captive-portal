@@ -9,11 +9,11 @@
     "routes": [
         {
             "src": "/auth/(.*)",
-            "dest": "./index.js"
+            "dest": "index.js"
         },
         {
             "src": "/auth/google/(.*)",
-            "dest": "./index.js"
+            "dest": "index.js"
         }
     ]
 }
