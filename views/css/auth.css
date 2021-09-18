@@ -57,8 +57,11 @@ body > div {
     overflow-x: hidden;
   }
   
+  #div1 {
+    padding: 20px;
+  }
+  
   #div2 {
-    zoom: 2;
     height: 100vh;
     flex: 1 0 auto;
     justify-content: normal;
