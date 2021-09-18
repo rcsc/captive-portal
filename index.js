@@ -14,7 +14,7 @@ app.use(session({
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-  res.render('pages/auth');
+  res.render('views/pages/auth');
 }); // Basic routing, passes any people who access the webpage to pages/auth
 
 const port = process.env.PORT || 3000; // Define the port the server will use
