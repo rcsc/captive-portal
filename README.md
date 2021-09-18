@@ -1,4 +1,4 @@
-# captive-portal.js
+# captive-portal
 
 A simple frontend that uses our attendance-rs backend for RCSC.
 
