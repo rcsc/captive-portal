@@ -99,12 +99,12 @@ async function createUser(userName, userEmail) {
 } // Create user if it doesnt exist and log their attendance
 
  
-var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy; // Google stuff
+var GoogleStrategy = require('passport-google-oauth20').OAuth2Strategy; // Google stuff
 
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: '/auth/google/callback'
+    callbackURL: 'https://cap.ridgecompsci.club/auth/google/callback'
   },
   function(accessToken, refreshToken, profile, done) {
       userProfile=profile;
