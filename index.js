@@ -112,10 +112,10 @@ passport.use(new GoogleStrategy({
   }
 )); // Tell passport to use google auth
  
-app.get('/auth/google', 
+app.get('https://cap.ridgecompsci.club/auth/google', 
   passport.authenticate('google', { scope : ['profile', 'email'] })); // What scopes google will access
  
-app.get('/auth/google/callback', 
+app.get('https://cap.ridgecompsci.club/auth/google/callback', 
   passport.authenticate('google', { failureRedirect: '/error' }),
   function(req, res) {
       var user = req["user"];
