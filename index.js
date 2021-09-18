@@ -104,7 +104,7 @@ var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy; // Google 
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: 'https://cap.ridgecompsci.club/auth/google/callback'
+    callbackURL: 'http://localhost:3000/auth/google/callback'
   },
   function(accessToken, refreshToken, profile, done) {
       userProfile=profile;
@@ -112,10 +112,10 @@ passport.use(new GoogleStrategy({
   }
 )); // Tell passport to use google auth
  
-app.get('https://cap.ridgecompsci.club/auth/google', 
+app.get('/auth/google', 
   passport.authenticate('google', { scope : ['profile', 'email'] })); // What scopes google will access
  
-app.get('https://cap.ridgecompsci.club/auth/google/callback', 
+app.get('/auth/google/callback', 
   passport.authenticate('google', { failureRedirect: '/error' }),
   function(req, res) {
       var user = req["user"];
