@@ -28,13 +28,13 @@ body > div {
 @media screen and (max-width: 1000px) {
   body {
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     overflow-x: hidden;
   }
   
   #header {
-    font-size: 26vw;
+    font-size: 2em;
     margin: 0;
   }
 }
