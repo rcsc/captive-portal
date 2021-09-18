@@ -11,7 +11,7 @@ app.use(session({
   secret: process.env.SECRET 
 })); // Set up the app using sessions
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/views'));
 
 app.get('/', function(req, res) {
   res.render('pages/auth');
@@ -104,7 +104,7 @@ var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy; // Google 
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: 'http://localhost:3000/auth/google/callback'
+    callbackURL: 'https://cap.ridgecompsci.club/auth/google/callback'
   },
   function(accessToken, refreshToken, profile, done) {
       userProfile=profile;

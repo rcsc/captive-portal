@@ -8,8 +8,20 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "/"
+            "src": "/auth/(.*)",
+            "dest": "index.js"
+        },
+        {
+            "src": "/auth/google/(.*)",
+            "dest": "index.js"
+        },
+        {
+            "src": "/success",
+            "dest": "index.js"
+        },
+        {
+            "src": "/css/auth.css",
+            "dest": "index.js"
         }
     ]
 }
