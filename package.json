@@ -19,6 +19,6 @@
     "graphql": "^15.5.1",
     "graphql-request": "^3.5.0",
     "passport": "^0.4.1",
-    "passport-google-oauth20": "^2.0.0"
+    "passport-google-oauth": "^2.0.0"
   }
 }
