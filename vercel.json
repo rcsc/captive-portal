@@ -18,6 +18,10 @@
         {
             "src": "/success",
             "dest": "index.js"
+        },
+        {
+            "src": "/auth.css",
+            "dest": "index.js"
         }
     ]
 }
