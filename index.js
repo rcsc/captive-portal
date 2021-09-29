@@ -1,15 +1,15 @@
 require('dotenv').config(); // Import all the .env variables and load them
 const express = require('express'); // JS version of importing express
 const app = express(); // Load express up as a app
-const session = require('express-session'); //JS version of importing express-sessions which does stuff
+//const session = require('express-session'); //JS version of importing express-sessions which does stuff
 
 app.set('view engine', 'ejs'); // Set express to load webpages using EJS
 
-app.use(session({
-  resave: false,
-  saveUninitialized: true,
-  secret: process.env.SECRET 
-})); // Set up the app using sessions
+// app.use(session({
+//   resave: false,
+//   saveUninitialized: true,
+//   secret: process.env.SECRET 
+// })); // Set up the app using sessions
 
 app.use(express.static(__dirname + '/views'));
 
