@@ -12,7 +12,7 @@
             "dest": "index.js"
         },
         {
-            "src": "/auth/google/(.*)",
+            "src": "/auth/google/callback",
             "dest": "index.js"
         },
         {
@@ -21,10 +21,6 @@
         },
         {
             "src": "/css/auth.css",
-            "dest": "index.js"
-        },
-        {
-            "src": "/auth/google/callback",
             "dest": "index.js"
         }
     ]
