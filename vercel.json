@@ -22,10 +22,6 @@
         {
             "src": "/css/auth.css",
             "dest": "index.js"
-        },
-        {
-            "src": "/auth/google/(.*)",
-            "dest": "index.js"
         }
     ]
 }
