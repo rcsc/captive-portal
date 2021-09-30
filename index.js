@@ -123,6 +123,6 @@ app.get('/auth/google/callback',
       var userEmail = userJson["email"];
       var userName = userJson["name"];
       logAttendance(userEmail, userName)
-      throw new Error("Idk this function is running");
+      // throw new Error("Idk this function is running");
       res.redirect('/success');
   }); // On success, find users details and send them to async logAttendance function
